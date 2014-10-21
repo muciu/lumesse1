@@ -1,5 +1,12 @@
 //Object literarl
 var newObject = {}; 
+
+var anotherObject = new function() {
+	this.var1 = 'value1';
+	this.method = function() {
+		console.log('some method');
+	}
+}
  
 //Creates object using expicit prototype
 var newObject = Object.create(Object.prototype);
